@@ -6,4 +6,8 @@ def main_menu
   side2 = gets.chomp.split[1]
   side3 = gets.chomp.split[2]
 
+  new_triangle = Triangle.new(side1, side2, side3)
+  puts "Your triangle is #{new_triangle.type}"
 end
+
+main_menu
